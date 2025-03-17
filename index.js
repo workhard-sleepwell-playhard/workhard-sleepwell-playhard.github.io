@@ -42,12 +42,12 @@ let currentQuestionIndex = 0;
 class Question {
     constructor(answers) {
         this.questions = [{
-            text: "Do you feel less motivitate not just about the gym but also in other areas of life?",
+            text: "Do you feel less motivated not just about the gym but also in other areas of life?",
             answers: answers,
             selectedAnswer: undefined
         },
         {
-            text: "Have you notice a pattern of unexpected poor sleep when not making any changes to your lifestyle?",
+            text: "Have you noticed a pattern of unexpected poor sleep when not making any changes to your lifestyle?",
             answers: answers,
             selectedAnswer: undefined
         },     
@@ -57,43 +57,43 @@ class Question {
             selectedAnswer: undefined
         },
         {
-            text:"Have you hit a platue even when it's not expected",
+            text: "Have you hit a plateau even when it's not expected?",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text: "do you notice any old injurise starting to flaw back up? ",
+            text: "Do you notice any old injuries starting to flow back up? ",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text:"Do you get a frequent cold or flu. Even when you are normally healthy?",
+            text: "Do you get a frequent cold or flu. Even when you are normally healthy?",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text:"You begin to think you'r losing your muscle. Not A FEELING, but you do see yourself getting smaller.",
+            text: "You begin to think you're losing your muscle. Not A FEELING, but you do see yourself getting smaller.",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text:"You have less energy to get through a noraml workout",
+            text: "You have less energy to get through a noraml workout",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text:"Your muscle get fatigued very quickly.",
+            text :"Your muscles get fatigued very quickly.",
             answers: answers,
             selectedAnswer: undefined
         },
         {
             
-            text:"You started to pack on more fat and minimal muscle gain.",
+            text: "You started to pack on more fat and minimal muscle gain.",
             answers: answers,
             selectedAnswer: undefined
         }];
@@ -144,10 +144,10 @@ class Question {
     //When user finises last question they can check their summeray 
     const adviceLookUp = {
         "q1": {
-            "your-done":"You don't want to go to the gym anymore, it's killing you, and you feel and performer like a slug that's running out of slime. In this case you tried everything, so do yourself a favour and stay home.",
-            "high-concern":"It seems the gym no longer animates you like before, perhaps training has gotten very reptitive, there are always different ways we can change our session to make it interesting again. However if doing so still feels like a chore then maybe it's time to lay off for a bit",
-            "moderate-concern":"motivation is only an feeling that comes and goes, it would be silly to detemine our action based on it alone, and frequtnly it's normal to not be motiviated but still deliever outstadning results ",
-            "no-concern":"It seems you still have stronge motivation to keep going, and there really is no reason to slow down if you feel mentally well."
+            "your-done":"You don't want to go to the gym anymore; it's killing you, and you feel and perform like a slug that's running out of slime. In this case, you tried everything, so do yourself a favour and stay home.",
+            "high-concern":"It seems the gym no longer animates you like before; perhaps training has gotten very repetitive. There are always different ways we can change our session to make it interesting again. However, if doing so still feels like a chore, then maybe it's time to lay off for a bit",
+            "moderate-concern":"motivation is only a feeling that comes and goes; it would be silly to determine our action based on it alone, and frequently it's normal to not be motivated but still deliver outstanding results ",
+            "no-concern":"It seems you still have strong motivation to keep going, and there is no reason to slow down if you feel mentally well."
         },
         "q2": {
             "your-done":"Severe sleep problems indicate serious overtraining. Take a break, focus on relaxation (meditation, stretching), and ensure you’re eating enough.",
