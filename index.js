@@ -266,28 +266,7 @@ class Question {
                         update();
                     }
                 });
-        
-                if (instructionBtn) {
-                    instructionBtn.addEventListener("click", () => {
-                        quizBox.innerHTML = `
-                        <div class="instruction">
-                            <h1 style= "padding-bottom: 10px;">How does it work?</h1>
-                            <p><strong>Overtraining :</strong> is a common issue for athletes and fitness enthusiasts. Overtraining occurs when the body is pushed beyond its limits and is unable to recover properly. This can lead to a decrease in performance, fatigue, and even injury.</p>
-                            <p style="padding-top: 20px;";><strong>This quiz will help you :</strong> determine if you are overtraining and provide you with tips on how to prevent it. <p style="padding-top: 20px;"><strong>To get started :</strong> please fill out the form below.</span> Afterwards you will be required to answer some question where we can access how badly you overtrainined or, prehaps you have just been abit lazy to train. <span style="background-color: #19b1f3; "><strong>Please anwer each question from 1 - 10. 1 Being the not at all, and 10 being yes thats so me!</strong></span></p>
-                            <button id="close-btn" style="margin-left: 520px;">Close</button>
-                        </div>`;
-                        userForm.style.display = "none";
-                        quote.style.display = "none";
-                        quizBox.style.display = "flex";
-                        const closeBtn = document.getElementById("close-btn");
-                        closeBtn.addEventListener("click", () => {
-                            quizBox.style.display = "none";
-                            userForm.style.display = "flex";
-                            quote.style.display = "flex";
-                        });
-                    });
-                }
-            
+       
         const displayFeedback = () => {
             const selectedAnswer = document.querySelector(`input[name="questions${currentQuestionIndex}"]:checked`) 
             if(!selectedAnswer){
@@ -407,3 +386,24 @@ const getAdvice = (questionId, answerValue) => {
     return adviceLookUp[questionId]["your-done"]
   }
 };
+
+ if (instructionBtn) {
+                    instructionBtn.addEventListener("click", () => {
+                        quizBox.innerHTML = `
+                        <div class="instruction">
+                            <h1 style= "padding-bottom: 10px;">How does it work?</h1>
+                            <p><strong>Overtraining :</strong> is a common issue for athletes and fitness enthusiasts. Overtraining occurs when the body is pushed beyond its limits and is unable to recover properly. This can lead to a decrease in performance, fatigue, and even injury.</p>
+                            <p style="padding-top: 20px;";><strong>This quiz will help you :</strong> determine if you are overtraining and provide you with tips on how to prevent it. <p style="padding-top: 20px;"><strong>To get started :</strong> please fill out the form below.</span> Afterwards you will be required to answer some question where we can access how badly you overtrainined or, prehaps you have just been abit lazy to train. <span style="background-color: #19b1f3; "><strong>Please anwer each question from 1 - 10. 1 Being the not at all, and 10 being yes thats so me!</strong></span></p>
+                            <button id="close-btn" style="margin-left: 520px;">Close</button>
+                        </div>`;
+                        userForm.style.display = "none";
+                        quote.style.display = "none";
+                        quizBox.style.display = "flex";
+                        const closeBtn = document.getElementById("close-btn");
+                        closeBtn.addEventListener("click", () => {
+                            quizBox.style.display = "none";
+                            userForm.style.display = "flex";
+                            quote.style.display = "flex";
+                        });
+                    });
+                }
