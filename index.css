@@ -1,0 +1,393 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{ 
+ background-image: linear-gradient(1deg,  #000000 0%, #3535e1 25%, #0e0ef0 50%,#0c0c0d 100%); 
+background-size: 300% 300%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    animation: background-flow 20s ease infinite alternate;
+}
+
+
+header{
+    font-family: 'Roboto', sans-serif;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+header p {
+    border-bottom: 2px solid #00b7ff;
+    font-size: 17px;
+    display: inline-block;
+    padding-top:10px;
+    margin-bottom: 90px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    margin: 0 auto;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    background: 
+   linear-gradient(hsl(0, 0%, 100%) 0 0 ) padding-box,
+   linear-gradient(to right, #2436fa,  #010315) border-box;
+   color: black;
+   box-shadow:   -20px -30px  rgba(1, 104, 249, 1.0),
+      20px 51px rgba(0, 0, 0, 1.8),
+      10px 10px 50px 30px rgba(4, 4, 4, 0.7);
+  border: 5px solid transparent;
+  border-radius: 20px;
+
+}
+#details.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+ h3{
+    padding-top:10px;
+   padding-bottom:20px;
+   font-size:25px;
+}
+
+#details.container,input{
+    display:flex;
+    flex-direction: column;;
+    width:100%;
+}
+
+#details.container, label{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding-bottom:10px;
+}
+
+#start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#start > button{
+    cursor: pointer;
+    background-color: #639ff3;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border:4px solid #131414;
+    margin-left:3px;
+}
+
+#it-helps{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f1f0f0;
+    border-left: 10px solid #4054ec;
+    margin: 70px auto;
+    padding: 1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size:20px;
+    max-width: 400px;
+
+}
+
+#it-helps:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.25em;
+    margin-right: 4.5em;
+}
+
+#it-helps:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 2em;
+  }
+
+  #it-helps p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:black;
+  }
+
+
+  button {
+    cursor: pointer;
+    background: linear-gradient(290deg, rgb(27, 27, 190),  #2f79f9);
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 5px solid rgb(15, 97, 228); 
+  }
+  button:hover{
+    background: linear-gradient(180deg, rgb(27, 27, 190), rgb(25, 177, 243)); 
+    border: 5px solid #010315;
+    color:rgb(13, 13, 13);
+    opacity: 0.8;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+#start > button{
+    cursor: pointer;
+    background: linear-gradient(290deg, rgb(27, 27, 190),  #2f79f9);
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 5px solid rgb(15, 97, 228); 
+}
+
+#start > button:hover{
+    background: linear-gradient(180deg, blue, rgb(25, 177, 243)); 
+    border: 5px solid #010315;
+    color:rgb(13, 13, 13);
+    opacity: 0.8;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+input:hover, select:hover{
+    border: 2px solid black;
+    opacity: 0.8;
+    
+}
+
+#progress-bar{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    border:5px solid #0673ef;
+    border-radius: 10px;;
+    height: 25px;
+    width: 600px;
+    margin-bottom: 20px;
+
+}
+
+#progress{
+    background-color: #00b7ff;
+width:0%;
+height: 100%;
+transition: width 1s ease-in-out;
+}
+
+
+#quiz{ 
+    display:none;
+     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border: 5px solid transparent;
+    width:600px;
+    margin: 0 auto;
+    margin-top:40px;
+    margin-bottom: 40px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background: 
+   linear-gradient(hsl(0, 0%, 100%) 0 0 ) padding-box,
+   linear-gradient(to right, #2436fa,  #010315) border-box;
+   color: black;
+   border-radius: 10px;
+   padding-top:10px;
+   box-shadow: -20px -10px  rgba(1, 104, 249, 1.0),
+      10px 21px rgba(0, 0, 0, 1.8),
+      10px 10px 50px 10px rgba(38, 41, 48, 0.7); 
+  border: 5px solid transparent;
+  z-index : 1;
+
+}
+
+#quiz.animate {
+    animation: fade-in 2s 1;
+}
+
+#quiz > #questions, #quiz > #feedback{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    width:500px;
+    padding:5px;
+    font-size: 20px;
+
+}
+
+#user-options{
+    display: none;
+     flex-direction: row;
+     margin: 0 auto;
+     border: 6px solid rgb(20, 20, 20);
+     align-items: center;
+     box-shadow: 10px 10px 5px rgb(44, 125, 255);
+    height: 100%;
+    width: 560px;
+    padding:20px;
+    padding: auto;
+   margin-top:50px;
+} 
+
+#btn{
+    display:none;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 600px;
+    margin-bottom:200px;
+    
+}
+#next-btn, #back-btn{
+    display:flex;
+    cursor: pointer;
+    background: linear-gradient(290deg, rgb(27, 27, 190),  #2f79f9);
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 5px solid rgb(15, 97, 228);    
+}
+
+#next-btn:hover, #back-btn:hover{
+    background: linear-gradient(180deg, blue, #19b1f3); 
+    border: 5px solid #010315;
+    color:rgb(13, 13, 13);
+    opacity: 0.8;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.instruction{
+    font-size: 20px;
+    padding:10px;
+
+}
+
+#quiz > #questions{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#user-options{ 
+    display:none;
+    flex-direction: row;
+    margin-top:10px;
+    border:3px solid white; 
+    box-shadow: none;
+    height:10px;
+    padding-top:15px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
+}
+
+.radio-btn{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:5px;
+}
+
+.radio-btn input[type="radio"]{
+    width:20px;
+    height:20px;
+}
+
+.radio-btn input[type="radio"]:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+#feedback{
+    display:none;
+    flex-direction: row;
+   justify-content: center;
+    border:5px solid black;
+    background-color: white;
+    color:black;
+    margin: 50px auto;
+    width:500px;
+    height:auto;
+    font-size: 25px;
+    padding-top:110px;
+    padding:10px;
+   box-shadow: 0px 0px 10px 10px rgb(44, 125, 255);
+   position: relative;
+}
+
+#feedback.animate{
+    animation: popup 1s  ease forwards 1, glow 6s ease infinite alternate;
+}
+
+.btn{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom:200px;
+}
+
+
+
+@keyframes popup {
+    from {bottom:-200px;}
+    to {bottom:0px;}
+}
+
+@keyframes glow {
+    0% { box-shadow: 5px -5px 15px 10px #2c7dff;}
+    25% { box-shadow: -5px -5px 20px 10px #337ff985;}
+    50% {box-shadow: -5px -3px 20px 10px #967af3;}
+    75% {box-shadow: 3px 2px 22px 10px #659bec;}
+    100%{box-shadow: 5px -5px 15px 10px #06d8f4b4;}
+}
+
+@keyframes fade-in{
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+@keyframes background-flow {
+   0%{background-position: 50% 100%;}
+   50%{background-position: 50% 0%;}
+   100%{background-position: 50% 100%;}  
+}
+
+ /* from {background: linear-gradient(1deg, #010315, #2436fa);} */
+    /* to   {background: linear-gradient(100deg, rgb(111, 209, 26) #19b1f3);} */
