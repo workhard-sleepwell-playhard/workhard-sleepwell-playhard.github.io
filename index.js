@@ -394,7 +394,7 @@ const getAdvice = (questionId, answerValue) => {
 };
 
 
- /* if (window.location.pathname.endsWith('summary.html')) {
+  if (window.location.pathname.endsWith('summary.html')) {
                  summary();
                 document.getElementById('download').addEventListener('click', () => {
                     const downloadFile = document.getElementById("summary-container");
@@ -412,4 +412,4 @@ const getAdvice = (questionId, answerValue) => {
                     });
                 }); 
             };
-*/
+
