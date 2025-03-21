@@ -221,7 +221,7 @@ transition: width 1s ease-in-out;
       10px 21px rgba(0, 0, 0, 1.8),
       10px 10px 50px 10px rgba(38, 41, 48, 0.7); 
   border: 5px solid transparent;
-  z-index : 1;
+  z-index: 1;
 
 }
 
@@ -248,7 +248,7 @@ transition: width 1s ease-in-out;
      10px 21px rgba(0, 0, 0, 1.8),
      10px 10px 50px 10px rgba(38, 41, 48, 0.7); 
  border: 5px solid transparent;
- z-index : 1;
+ z-index: 3;
 
 }
 
