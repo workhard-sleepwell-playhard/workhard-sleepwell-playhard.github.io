@@ -337,7 +337,9 @@ class Question {
 
         });
     }
-        if(instructionBtn){instructionBtn.addEventListener("click", () => {
+       
+        }; 
+         if(instructionBtn){instructionBtn.addEventListener("click", () => {
             instruction.innerHTML = `
             <div class="instruction">
                 <h1 style= "padding-bottom: 10px;">How does it work?</h1>
@@ -355,8 +357,6 @@ class Question {
                 quote.style.display = "flex";
             });
         });
-        }; 
-        
     //   };
 // });
 
