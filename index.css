@@ -225,6 +225,33 @@ transition: width 1s ease-in-out;
 
 }
 
+#instructions{
+    display:none;
+    flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   position: relative;
+   border: 5px solid transparent;
+   width:600px;
+   margin: 0 auto;
+   margin-top:40px;
+   margin-bottom: 40px;
+   height: auto;
+   font-family: 'Roboto', sans-serif;
+   background: 
+  linear-gradient(hsl(0, 0%, 100%) 0 0 ) padding-box,
+  linear-gradient(to right, #2436fa,  #010315) border-box;
+  color: black;
+  border-radius: 10px;
+  padding-top:10px;
+  box-shadow: -20px -10px  rgba(1, 104, 249, 1.0),
+     10px 21px rgba(0, 0, 0, 1.8),
+     10px 10px 50px 10px rgba(38, 41, 48, 0.7); 
+ border: 5px solid transparent;
+ z-index : 1;
+
+}
+
 #quiz.animate {
     animation: fade-in 2s 1;
 }
