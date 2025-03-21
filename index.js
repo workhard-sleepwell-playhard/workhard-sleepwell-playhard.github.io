@@ -337,7 +337,8 @@ class Question {
 
         });
     }
-        if(instructionBtn){instructionBtn.addEventListener("click", () => {
+        if(instructionBtn){instructionBtn.addEventListener("click", () => { 
+         instruction.style.display = "flex";
             instruction.innerHTML = `
             <div class="instruction">
                 <h1 style= "padding-bottom: 10px;">How does it work?</h1>
@@ -347,7 +348,7 @@ class Question {
             </div>`;
             userForm.style.display = "none";
             quote.style.display = "none";
-            instruction.style.display = "flex";
+           
             const closeBtn = document.getElementById("close-btn");
             closeBtn.addEventListener("click", () => {
                 instruction.style.display = "none";
