@@ -336,7 +336,7 @@ class Question {
 
 
         });
-    }
+    
         if(instructionBtn){instructionBtn.addEventListener("click", () => {
             instruction.innerHTML = `
             <div class="instruction">
